@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="pUB-OX-w6a">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <scenes>
+        <!--Reader View Controller - Code Reader-->
+        <scene sceneID="xq9-Hf-IFI">
+            <objects>
+                <viewController id="oq3-4S-vAt" customClass="DHQRReaderViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2yq-X5-M6B"/>
+                        <viewControllerLayoutGuide type="bottom" id="DZ2-Qh-njE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WTP-HW-vmx">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="5fb-2m-x7f">
+                                <rect key="frame" x="20" y="491" width="280" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.31960720486111116" green="0.31960720486111116" blue="0.31960720486111116" alpha="0.5" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="0.99384223090277779" green="0.99384223090277779" blue="0.99384223090277779" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5fb-2m-x7f" firstAttribute="leading" secondItem="WTP-HW-vmx" secondAttribute="leading" constant="20" symbolic="YES" id="Sdb-JZ-huz"/>
+                            <constraint firstAttribute="bottom" secondItem="5fb-2m-x7f" secondAttribute="bottom" constant="20" symbolic="YES" id="YML-0T-Xyv"/>
+                            <constraint firstAttribute="trailing" secondItem="5fb-2m-x7f" secondAttribute="trailing" constant="20" symbolic="YES" id="ivC-gm-RNR"/>
+                            <constraint firstItem="5fb-2m-x7f" firstAttribute="top" secondItem="2yq-X5-M6B" secondAttribute="bottom" constant="427" id="neS-89-CTh"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Code Reader" id="cbj-tX-JlV"/>
+                    <connections>
+                        <outlet property="codeLabel" destination="5fb-2m-x7f" id="Gf8-D4-yAj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1kk-PK-52h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="968" y="166"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="GhU-Jh-hDn">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="pUB-OX-w6a" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Q6T-Ls-DOX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="oq3-4S-vAt" kind="relationship" relationship="rootViewController" id="rFb-Rd-bza"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ERV-cc-r0w" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="442" y="166"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
